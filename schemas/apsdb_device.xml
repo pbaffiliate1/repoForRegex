@@ -1,3 +1,8 @@
+<!-- 
+We added to the default device schema a field called fieldToSearch that is searchable.
+-->
+
+
 <schema>
 	<aclGroups>
 		<aclGroup name="required">
@@ -23,6 +28,9 @@
 				<field>name</field>
 				<field>password</field>
 				<field>locale</field>
+				<field>fileField1</field>
+				<field>fileField2</field>
+				<field>fieldToSearch</field>
 			</fields>
 		</aclGroup>
 		<defaultAcl>
@@ -42,6 +50,9 @@
 		<field name="password" type="string" />
 		<field name="locale" type="string" />
 		<field name="isSuspended" type="string" />
-		<field name="token" type="string" />
+		<field name="fileField1" type="file" />
+		<field name="fileField2" type="file" />
+		<field name="fieldToSearch" type="string" searchable="true" />
+		<field name="token" type="string"/>
 	</fields>
 </schema>
